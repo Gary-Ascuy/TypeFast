@@ -220,17 +220,8 @@ export class WordService {
     const res: string[] = [];
 
     wordCount = wordCount !== undefined ? wordCount : this.DEFAULT_WORD_AMOUNT;
-
     while (res.length < wordCount) {
-      if (this.wordsCopy.length === 0) {
-        this.wordsCopy = this.words.slice();
-      }
-      res.push(
-        this.wordsCopy.splice(
-          Math.floor(Math.random() * this.wordsCopy.length),
-          1
-        )[0]
-      );
+      res.push('aaaa');
     }
 
     return res;
